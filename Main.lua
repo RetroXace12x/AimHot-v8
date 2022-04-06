@@ -1834,21 +1834,7 @@ do
         if completeStop then return end
 
 
-        local viewportsize = camera.ViewportSize
-        if credits == nil then
-            credits = newdrawing("Text", {
-                Text = "AimHot v8, Herrtt#3868"; -- yes now be happy this is free
-                Color = Color3.new(255,255,255);
-                Size = 25.0;
-                Transparency = .8;
-                Position = v2new(viewportsize.X/8, 6);
-                Outline = true;
-                Visible = true;
-            })
-        else
-            credits.Position = v2new(viewportsize.X/8, 6);
-        end
-
+     
         if aimbot.enabled and aimbot.fovenabled and visuals.enabled then
             profilebegin("fov.step")
             if circle == nil then
